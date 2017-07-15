@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Mobius FF - JPN</title>
+</head>
+<body>
+    <ul>
+        <li><a href="#" onclick="toggle('home', 'main')">Home</a></li>
+        <li><a href="#" onclick="toggle('job', 'main')">Jobs</a></li>
+        <li><a href="#" onclick="toggle('ability', 'main')">Abilities</a></li>
+        <li><a href="#" onclick="toggle('farming', 'main')">Farming</a></li>
+        <li><a href="#" onclick="toggle('hall-of-fame', 'main')">Hall of Fame</a></li>
+        <li><a href="#" onclick="toggle('cards', 'main')">Cards</a></li>
+        <li><a href="#" onclick="toggle('fodder-map', 'main')">Fodder Maps</a></li>
+    </ul>
+
+    <div class="main">
+        <div class="title">
+            Mobius Final Fantasy
+        </div>
+        <hr>
+        <div class="links" style="display: none">
+            Navigation: 
+            <a href="#" onclick="toggle('home', 'main', 'event')">Home</a> > 
+            <a href="#" onclick="toggle('home', 'main')">Home</a> - 
+            <br><br>
+        </div>
+        <div class="content">
+            <div class="left-column">
+                <div class="jobs-nav" style="display: none">
+                    Jobs
+                    <hr>
+                    <a href="#" onclick="toggle('class-warrior', 'middle-column')">Warrior</a><br>
+                    <a href="#" onclick="toggle('class-mage', 'middle-column')">Mage</a><br>
+                    <a href="#" onclick="toggle('class-ranger', 'middle-column')">Ranger</a><br>
+                    <a href="#" onclick="toggle('class-monk', 'middle-column')">Monk</a><br>
+                    <a href="#" onclick="toggle('class-meia', 'middle-column')">Meia</a><br>
+                    
+                    
+                    
+                    
+
+                </div>
+            </div>
+            <div class="middle-column">
+                <h2>Note: Buttons above not currently implemented</h2>
+                <hr>
+                <div class="fodder-map-set">
+                    <div id="map-ch4-ex-albion" class="map-set">
+                        Chapter 4 - Albion's Plateau<br>
+
+                        <a href="./res/maps/ch4-ex-albion.png"><img id="thumb-ch4-ex" class="thumbnail" src="res/maps/ch4-ex-albion.png" alt="Chapter 4 - Albion's Plateau"></a>
+                        <!--<div id="modal-ch4-ex" class="modal">
+                            <span class="close" onclick="document.getElementById('modal-ch4-ex').style.display='none'">&times;</span>
+
+                            <div class="modal-image-container">
+                                <img class="modal-image" id="ch4-ex-albion-image">
+                            </div>
+                        </div>-->
+                    </div>
+                    <div id="map-ch4-ex-albion-another" class="map-set">
+                        Chapter 4 - Albion's Plateau (ANOTHER)<br>
+                        <a href="./res/maps/ch4-ex-albion-another.png"><img id="thumb-ch4-ex-another" class="thumbnail" src="res/maps/ch4-ex-albion-another.png" alt="Chapter 4 - Albion's Plateau (ANOTHER)"></a>
+                    </div>
+                    <div id="map-yggdrasil" class="map-set">
+                        Sacred Tree - Yggdrasil<br>
+                        <a href="./res/maps/sacred-tree-yggdrasil.png"><img id="thumb-sacred-tree-yggdrasil" class="thumbnail" src="res/maps/sacred-tree-yggdrasil.png" alt="Sacred Tree - Yggdrasil"></a>
+                        <!--<div id="modal-sacred-tree-yggdrasil" class="modal">
+                            <span class="close" onclick="document.getElementById('modal-sacred-tree-yggdrasil').style.display='none'">&times;</span>
+
+                            <div class="modal-image-container">
+                                <img class="modal-image" id="sacred-tree-yggdrasil-image">
+                            </div>
+                        </div>-->
+                    </div>
+                    
+                </div>
+                This is a test.
+            </div>
+        </div>
+
+        <div class="foot" style="display: none">
+            <hr>
+            Size-check.
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
